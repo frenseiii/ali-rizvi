@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dr. Ali Rizvi · Founder, ClawbackVault</title>
+<meta name="description" content="Dr. Ali Rizvi: computer engineer, entrepreneurship researcher and second-time founder. Building ClawbackVault, the relationship brain for high-touch firms.">
+<meta property="og:title" content="Dr. Ali Rizvi · Founder, ClawbackVault">
+<meta property="og:image" content="ali.png">
+<style>
+@font-face{font-family:Manrope;src:url(Manrope.ttf);font-weight:200 800;font-display:swap}
+:root{--bg:#000;--card:#0d0e10;--line:#1f2125;--ink:#f5f5f7;--sub:#a7adb6;--or:#F18A2E;--gr:#34C77B}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:Manrope,system-ui,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+.glow{position:absolute;inset:0 0 auto 0;height:720px;background:radial-gradient(60% 55% at 70% 0%,rgba(241,138,46,.30),transparent 70%),radial-gradient(40% 40% at 15% 10%,rgba(241,138,46,.12),transparent 70%);pointer-events:none;mask-image:linear-gradient(#000 40%,transparent)}
+header{position:relative;padding:28px 0 96px}
+nav{display:flex;justify-content:space-between;align-items:center;font-size:14px;color:var(--sub)}
+nav b{color:var(--ink);font-weight:700;letter-spacing:.02em}
+nav a{text-decoration:none;margin-left:22px}
+nav a:hover{color:var(--ink)}
+.hero{display:grid;grid-template-columns:1.25fr .75fr;gap:56px;align-items:center;margin-top:84px}
+.eyebrow{color:var(--or);font-weight:600;font-size:14px;letter-spacing:.08em;text-transform:uppercase}
+h1{font-size:clamp(40px,5.6vw,72px);font-weight:300;letter-spacing:-.035em;line-height:1.02;margin:18px 0 22px}
+h1 em{font-style:normal;font-weight:600;background:linear-gradient(90deg,#FFB067,#F18A2E 60%,#E2621B);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{font-size:20px;color:var(--sub);max-width:600px}
+.lead b{color:var(--ink);font-weight:600}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:999px;font-weight:600;font-size:15px;text-decoration:none;border:1px solid var(--line);transition:transform .2s,border-color .2s}
+.btn:hover{transform:translateY(-2px);border-color:#3a3d43}
+.btn.p{background:var(--or);color:#000;border-color:var(--or)}
+.photo{position:relative;justify-self:center}
+.photo img{width:100%;max-width:380px;aspect-ratio:1;object-fit:cover;border-radius:28px;display:block;filter:saturate(1.02)}
+.photo:before{content:"";position:absolute;inset:-28px;background:radial-gradient(closest-side,rgba(241,138,46,.45),transparent);z-index:-1;filter:blur(20px)}
+.tag{position:absolute;background:rgba(13,14,16,.86);backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:14px;padding:10px 14px;font-size:13px;line-height:1.3;white-space:nowrap}
+.tag b{display:block;font-size:15px}
+.t1{left:-46px;bottom:52px}.t2{right:-30px;top:30px}
+.tag i{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--gr);margin-right:6px}
+section{padding:88px 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(32px,4vw,48px);font-weight:300;letter-spacing:-.03em;line-height:1.1;margin-bottom:14px}
+h2 em{font-style:normal;color:var(--or);font-weight:500}
+.sub{color:var(--sub);font-size:18px;max-width:680px;margin-bottom:44px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:22px;overflow:hidden}
+.stat{background:var(--bg);padding:30px 26px}
+.stat b{display:block;font-size:46px;font-weight:300;letter-spacing:-.03em}
+.stat span{color:var(--sub);font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px;transition:transform .25s,border-color .25s}
+.card:hover{transform:translateY(-4px);border-color:#34373d}
+.card .k{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--or);font-weight:600}
+.card h3{font-size:20px;font-weight:600;margin:10px 0 8px;letter-spacing:-.01em}
+.card p{color:var(--sub);font-size:15px}
+.card a.more{display:inline-block;margin-top:14px;font-size:14px;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--or)}
+.story{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.story p{color:var(--sub);font-size:18px;margin-bottom:18px}
+.story p b{color:var(--ink);font-weight:600}
+.quote{font-size:28px;font-weight:300;letter-spacing:-.02em;line-height:1.3;border-left:2px solid var(--or);padding-left:24px}
+.tl{position:relative;margin-left:8px}
+.tl:before{content:"";position:absolute;left:0;top:6px;bottom:6px;width:1px;background:linear-gradient(var(--or),var(--line))}
+.ev{position:relative;padding:0 0 30px 34px}
+.ev:before{content:"";position:absolute;left:-5px;top:7px;width:11px;height:11px;border-radius:50%;background:#000;border:2px solid var(--or)}
+.ev .y{font-size:13px;color:var(--or);font-weight:600;letter-spacing:.04em}
+.ev h4{font-size:18px;font-weight:600;margin:2px 0 4px}
+.ev p{color:var(--sub);font-size:15px;max-width:720px}
+.cv{background:var(--card);border:1px solid var(--line);border-radius:28px;padding:48px;display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center;position:relative;overflow:hidden}
+.cv:after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;background:radial-gradient(closest-side,rgba(241,138,46,.28),transparent)}
+.cv img{max-width:260px;width:100%}
+.cv ul{list-style:none;margin-top:18px}
+.cv li{padding:10px 0;border-top:1px solid var(--line);color:var(--sub);font-size:15px}
+.cv li b{color:var(--ink);font-weight:600}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{border:1px solid var(--line);border-radius:999px;padding:9px 16px;font-size:14px;color:var(--sub)}
+footer{padding:56px 0 70px;border-top:1px solid var(--line);color:var(--sub);font-size:14px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s ease}
+.reveal.in{opacity:1;transform:none}
+@media (max-width:860px){
+ .hero,.story,.cv{grid-template-columns:1fr}
+ .photo{order:-1}.photo img{max-width:280px}
+ .t1{left:-10px;bottom:-18px}.t2{right:-10px;top:-18px}
+ .stats{grid-template-columns:1fr 1fr}
+ .grid{grid-template-columns:1fr}
+ nav a{display:none}
+ .cv{padding:30px}
+}
+</style>
+</head>
+<body>
+<header>
+ <div class="glow"></div>
+ <div class="wrap" style="position:relative">
+  <nav><b>Dr. Ali Rizvi</b><div><a href="#story">Story</a><a href="#wins">Track record</a><a href="#research">Research</a><a href="#now">ClawbackVault</a><a href="https://www.linkedin.com/in/dr-ali-rizvi">LinkedIn</a></div></nav>
+  <div class="hero">
+   <div>
+    <div class="eyebrow">Founder &amp; CEO · ClawbackVault · Toronto</div>
+    <h1>I build software that hears <em>relationships drifting</em> before they break.</h1>
+    <p class="lead">Computer engineer. Enterprise SaaS seller. PhD in Entrepreneurship. <b>Second-time founder</b>, now building ClawbackVault, the relationship brain for high-touch firms.</p>
+    <div class="cta">
+     <a class="btn p" href="https://clawbackvault.com">See ClawbackVault →</a>
+     <a class="btn" href="https://www.linkedin.com/in/dr-ali-rizvi">LinkedIn</a>
+     <a class="btn" href="mailto:ali@clawbackvault.com">ali@clawbackvault.com</a>
+    </div>
+   </div>
+   <div class="photo">
+    <img src="ali.png" alt="Dr. Ali Rizvi">
+    <div class="tag t2"><b>Irish Times</b>Innovator to Watch 2025</div>
+    <div class="tag t1"><i></i><b>Best Tech Irish Startups</b>2024 finalist</div>
+   </div>
+  </div>
+ </div>
+</header>
+
+<section class="reveal">
+ <div class="wrap">
+  <div class="stats">
+   <div class="stat"><b>11</b><span>years shipping and selling software</span></div>
+   <div class="stat"><b>$450K+</b><span>letters of intent for my last startup</span></div>
+   <div class="stat"><b>15M+</b><span>views on our PhD community page in 3 months</span></div>
+   <div class="stat"><b>3</b><span>patents pending</span></div>
+  </div>
+ </div>
+</section>
+
+<section id="story" class="reveal">
+ <div class="wrap story">
+  <div>
+   <h2>Why <em>me</em>, for this problem</h2>
+   <p class="quote">"I've sold in a high-touch market. Relationships decide revenue, and CRMs only know what someone typed in."</p>
+  </div>
+  <div>
+   <p>I sold enterprise account-planning software built on Salesforce, closing <b>Siemens, Medtronic and Cummins</b>. I watched deals live and die on relationships the tools never saw.</p>
+   <p>Then I built <b>Frensei PhD Peer</b>: communication intelligence that catches early drift between PhD students and supervisors, in a field where up to 70% of candidates never finish. It worked, and it drew strategic interest from leading research-tech companies, including <b>Digital Science</b>.</p>
+   <p>ClawbackVault applies the same idea where it costs the most: <b>client relationships</b>. I took a sabbatical from teaching, raised six figures and moved to Canada to build it full time.</p>
+  </div>
+ </div>
+</section>
+
+<section id="wins" class="reveal">
+ <div class="wrap">
+  <h2>Track <em>record</em></h2>
+  <p class="sub">Checkable wins, not job titles.</p>
+  <div class="grid">
+   <div class="card"><div class="k">Press · 2025</div><h3>The Irish Times: Innovators to Watch</h3><p>Named among Ireland's innovators to watch for 2025 for Frensei.</p></div>
+   <div class="card"><div class="k">Award · 2024</div><h3>Best Tech Irish Startups</h3><p>Finalist for Best Tech Startup and Best Pitch.</p></div>
+   <div class="card"><div class="k">Accelerator · 2024</div><h3>Enterprise Ireland New Frontiers</h3><p>Phase 2, Ireland's national programme for high-potential founders, backed by the Government of Ireland.</p></div>
+   <div class="card"><div class="k">Accelerator · 2022</div><h3>Trinity LaunchBox</h3><p>Won the audience vote at Trinity College Dublin's flagship student accelerator.</p></div>
+   <div class="card"><div class="k">Competition · 2024</div><h3>Irish Student Entrepreneurship Forum</h3><p>Top-two finish nationally.</p></div>
+   <div class="card"><div class="k">Grant · 2023</div><h3>European Commission grant</h3><p>Research funding with Dr. Giulio Buciuni, Trinity Business School.</p></div>
+   <div class="card"><div class="k">Sales · 2016-18</div><h3>Siemens, Medtronic, Cummins</h3><p>Senior business development at DemandFarm (Salesforce AppExchange). Owned the US East Coast; represented the company at Dreamforce.</p></div>
+   <div class="card"><div class="k">Leadership · 2015-16</div><h3>Youngest manager, 80+ people</h3><p>At DemandShore (Ziff Davis Performance Marketing), after outperforming a hand-picked team on the Salesforce.com programme.</p></div>
+   <div class="card"><div class="k">First build · age 18</div><h3>Six police forces online</h3><p>Co-founded a web studio that built the official websites of six district police forces in Maharashtra, India.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="research" class="reveal">
+ <div class="wrap">
+  <h2>Research and <em>teaching</em></h2>
+  <p class="sub">I study why small firms survive, then build for them.</p>
+  <div class="grid">
+   <div class="card"><div class="k">Journal · 2025</div><h3>Small Business Economics</h3><p>Published in Springer Nature's Small Business Economics (ABS 3) on how multinationals shape local startup ecosystems. Reviewer for the journal and the Academy of Management.</p><a class="more" href="https://scholar.google.com/scholar?q=Rizvi+Buciuni+Small+Business+Economics">Find the paper →</a></div>
+   <div class="card"><div class="k">PhD · Trinity College Dublin</div><h3>Multinational spillovers and entrepreneurial ecosystems</h3><p>Doctorate in Entrepreneurship, Trinity Business School. MSc in Entrepreneurship, First Class Honours.</p><a class="more" href="https://edepositireland.ie/handle/2262/108504">Read the thesis →</a></div>
+   <div class="card"><div class="k">Policy · European Union</div><h3>Consultant to the EU</h3><p>Methodology and scoring for the Corporate Family Responsibility Index; book chapter and keynotes in Italy and Prague.</p></div>
+   <div class="card"><div class="k">Teaching</div><h3>Entrepreneurship faculty</h3><p>Taught MBA and undergraduate entrepreneurship; guest lecturer at Trinity; founding programme manager of Trinity's first social-enterprise incubator (about 300 students to Demo Day).</p></div>
+   <div class="card"><div class="k">Conferences</div><h3>INNODAYS, DTU, EU CFR</h3><p>Papers at INNODAYS Casablanca 2022 and DTU 2023 (top 25 papers); keynotes at EU CFR conferences.</p></div>
+   <div class="card"><div class="k">IP</div><h3>3 patents pending</h3><p>Including the Research Continuity Engine, filed in Ireland.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="now" class="reveal">
+ <div class="wrap">
+  <div class="cv">
+   <div>
+    <div class="eyebrow">Building now</div>
+    <h2 style="margin-top:10px">ClawbackVault: the <em>relationship brain</em> for high-touch firms</h2>
+    <p class="sub" style="margin-bottom:0">Clients rarely leave suddenly; the relationship drifts first. ClawbackVault reads only the clients a firm approves, masks personal details before any AI sees text, and each morning shows who is drifting, what was promised and what is missing, with a draft. A person always sends.</p>
+    <ul>
+     <li><b>Markets:</b> commercial insurance brokers in Canada, mortgage brokers in Australia</li>
+     <li><b>Depth:</b> 489 real client moments scored across six markets</li>
+     <li><b>Trust:</b> read-only, approved clients only, independent pen test passed</li>
+    </ul>
+    <div class="cta"><a class="btn p" href="https://clawbackvault.com">clawbackvault.com →</a></div>
+   </div>
+   <div style="text-align:center;position:relative;z-index:1"><img src="cv-lockup.png" alt="ClawbackVault"></div>
+  </div>
+ </div>
+</section>
+
+<section class="reveal">
+ <div class="wrap">
+  <h2>Beyond <em>work</em></h2>
+  <div class="chips" style="margin-top:24px">
+   <span class="chip">Trinity table-tennis champion, three years running</span>
+   <span class="chip">Irish intervarsity plate winner, 2023</span>
+   <span class="chip">8 state-level tournament wins in India</span>
+   <span class="chip">Lead singer, college band</span>
+   <span class="chip">English · Hindi · Urdu · Marathi</span>
+   <span class="chip">IELTS band 9</span>
+  </div>
+ </div>
+</section>
+
+<footer class="wrap">
+ <span>© 2026 Dr. Ali Rizvi · Toronto, Canada</span>
+ <span><a href="mailto:ali@clawbackvault.com">ali@clawbackvault.com</a> · <a href="https://www.linkedin.com/in/dr-ali-rizvi">LinkedIn</a> · <a href="https://clawbackvault.com">clawbackvault.com</a></span>
+</footer>
+
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
