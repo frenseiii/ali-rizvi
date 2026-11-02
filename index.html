@@ -32,7 +32,7 @@ h1 em{font-style:normal;font-weight:600;background:linear-gradient(90deg,#FFB067
 .btn:hover{transform:translateY(-2px);border-color:#3a3d43}
 .btn.p{background:var(--or);color:#000;border-color:var(--or)}
 .photo{position:relative;justify-self:center}
-.photo img{width:100%;max-width:380px;aspect-ratio:1;object-fit:cover;border-radius:28px;display:block;filter:saturate(1.02)}
+.photo img{width:100%;max-width:400px;aspect-ratio:3/4;object-fit:cover;object-position:top;border-radius:28px;display:block}
 .photo:before{content:"";position:absolute;inset:-28px;background:radial-gradient(closest-side,rgba(241,138,46,.45),transparent);z-index:-1;filter:blur(20px)}
 .tag{position:absolute;background:rgba(13,14,16,.86);backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:14px;padding:10px 14px;font-size:13px;line-height:1.3;white-space:nowrap}
 .tag b{display:block;font-size:15px}
@@ -84,18 +84,30 @@ footer{padding:56px 0 70px;border-top:1px solid var(--line);color:var(--sub);fon
  nav a{display:none}
  .cv{padding:30px}
 }
+.media{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.mcard{background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden;margin:0;transition:transform .25s,border-color .25s}
+.mcard:hover{transform:translateY(-4px);border-color:#34373d}
+.mcard.wide{grid-column:span 2}
+.mcard img{width:100%;height:260px;object-fit:cover;display:block}
+.mcard figcaption{padding:18px 20px;color:var(--sub);font-size:15px}
+.mcard figcaption b{display:block;color:var(--ink);font-size:17px;margin-bottom:4px}
+.mcard.paper{padding:24px}
+.mcard .k{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--or);font-weight:600}
+.mcard .pt{font-size:20px;font-weight:600;margin:10px 0 8px}
+.mcard.paper p{color:var(--sub);font-size:15px}
+@media (max-width:860px){.media{grid-template-columns:1fr}.mcard.wide{grid-column:auto}}
 </style>
 </head>
 <body>
 <header>
  <div class="glow"></div>
  <div class="wrap" style="position:relative">
-  <nav><b>Dr. Ali Rizvi</b><div><a href="#story">Story</a><a href="#wins">Track record</a><a href="#research">Research</a><a href="#now">ClawbackVault</a><a href="https://www.linkedin.com/in/dr-ali-rizvi">LinkedIn</a></div></nav>
+  <nav><b>Dr. Ali Rizvi</b><div><a href="#story">Story</a><a href="#wins">Track record</a><a href="#research">Research</a><a href="#press">Press</a><a href="#now">ClawbackVault</a><a href="https://www.linkedin.com/in/dr-ali-rizvi">LinkedIn</a></div></nav>
   <div class="hero">
    <div>
     <div class="eyebrow">Founder &amp; CEO · ClawbackVault · Toronto</div>
-    <h1>I build software that hears <em>relationships drifting</em> before they break.</h1>
-    <p class="lead">Computer engineer. Enterprise SaaS seller. PhD in Entrepreneurship. <b>Second-time founder</b>, now building ClawbackVault, the relationship brain for high-touch firms.</p>
+    <h1>Building the <em>relationship brain</em> that people and AI agents work from.</h1>
+    <p class="lead">Computer engineer. Enterprise SaaS seller. PhD in Entrepreneurship, Trinity College Dublin. <b>Second-time founder</b>, now building ClawbackVault.</p>
     <div class="cta">
      <a class="btn p" href="https://clawbackvault.com">See ClawbackVault →</a>
      <a class="btn" href="https://www.linkedin.com/in/dr-ali-rizvi">LinkedIn</a>
@@ -103,9 +115,7 @@ footer{padding:56px 0 70px;border-top:1px solid var(--line);color:var(--sub);fon
     </div>
    </div>
    <div class="photo">
-    <img src="ali.png" alt="Dr. Ali Rizvi">
-    <div class="tag t2"><b>Irish Times</b>Innovator to Watch 2025</div>
-    <div class="tag t1"><i></i><b>Best Tech Irish Startups</b>2024 finalist</div>
+    <img src="ali-full.jpg" alt="Dr. Ali Rizvi">
    </div>
   </div>
  </div>
@@ -159,12 +169,26 @@ footer{padding:56px 0 70px;border-top:1px solid var(--line);color:var(--sub);fon
   <h2>Research and <em>teaching</em></h2>
   <p class="sub">I study why small firms survive, then build for them.</p>
   <div class="grid">
-   <div class="card"><div class="k">Journal · 2025</div><h3>Small Business Economics</h3><p>Published in Springer Nature's Small Business Economics (ABS 3) on how multinationals shape local startup ecosystems. Reviewer for the journal and the Academy of Management.</p><a class="more" href="https://scholar.google.com/scholar?q=Rizvi+Buciuni+Small+Business+Economics">Find the paper →</a></div>
-   <div class="card"><div class="k">PhD · Trinity College Dublin</div><h3>Multinational spillovers and entrepreneurial ecosystems</h3><p>Doctorate in Entrepreneurship, Trinity Business School. MSc in Entrepreneurship, First Class Honours.</p><a class="more" href="https://edepositireland.ie/handle/2262/108504">Read the thesis →</a></div>
    <div class="card"><div class="k">Policy · European Union</div><h3>Consultant to the EU</h3><p>Methodology and scoring for the Corporate Family Responsibility Index; book chapter and keynotes in Italy and Prague.</p></div>
    <div class="card"><div class="k">Teaching</div><h3>Entrepreneurship faculty</h3><p>Taught MBA and undergraduate entrepreneurship; guest lecturer at Trinity; founding programme manager of Trinity's first social-enterprise incubator (about 300 students to Demo Day).</p></div>
    <div class="card"><div class="k">Conferences</div><h3>INNODAYS, DTU, EU CFR</h3><p>Papers at INNODAYS Casablanca 2022 and DTU 2023 (top 25 papers); keynotes at EU CFR conferences.</p></div>
    <div class="card"><div class="k">IP</div><h3>3 patents pending</h3><p>Including the Research Continuity Engine, filed in Ireland.</p></div>
+  </div>
+ </div>
+</section>
+
+
+<section id="press" class="reveal">
+ <div class="wrap">
+  <h2>In the <em>press</em> and in <em>policy</em></h2>
+  <p class="sub">Recognition for the work, and research that shapes policy.</p>
+  <div class="media">
+   <figure class="mcard"><img src="irish-times.jpg" alt="The Irish Times article on Frensei PhD Peer"><figcaption><b>The Irish Times</b>&ldquo;AI-driven platform addresses high rate of attrition among PhD students.&rdquo; Innovators to Watch 2025.</figcaption></figure>
+   <figure class="mcard wide"><img src="eu-cfr.jpg" alt="European Union CFR steering committee"><figcaption><b>Consultant to the European Union</b>Corporate Family Responsibility Index: methodology and scoring across 15+ EU countries; keynotes in Italy and Prague.</figcaption></figure>
+   <figure class="mcard"><img src="phd-peer.jpg" alt="Frensei PhD Peer"><figcaption><b>Frensei PhD Peer</b>Our PhD community page reached 15M+ views in 3 months and became our user funnel.</figcaption></figure>
+   <figure class="mcard wide"><img src="frensei-team.jpg" alt="Frensei founders, Dublin"><figcaption><b>Frensei, Dublin</b>Best Tech Irish Startups 2024 finalist; Enterprise Ireland New Frontiers; Trinity LaunchBox audience vote.</figcaption></figure>
+   <div class="mcard paper"><div class="k">Journal article &middot; Springer Nature</div><div class="pt">Small Business Economics</div><p>How multinational companies shape local startup ecosystems: evidence from Dublin. With Dr. Giulio Buciuni, Trinity Business School.</p><a class="more" href="https://scholar.google.com/scholar?q=Rizvi+Buciuni+Small+Business+Economics">Read the paper &rarr;</a></div>
+   <div class="mcard paper"><div class="k">PhD &middot; Trinity College Dublin</div><div class="pt">Doctor of Philosophy, Entrepreneurship</div><p>Multinational spillovers and entrepreneurial ecosystems. Plus an MSc in Entrepreneurship with First Class Honours.</p><a class="more" href="https://edepositireland.ie/handle/2262/108504">Read the thesis &rarr;</a></div>
   </div>
  </div>
 </section>
@@ -174,12 +198,12 @@ footer{padding:56px 0 70px;border-top:1px solid var(--line);color:var(--sub);fon
   <div class="cv">
    <div>
     <div class="eyebrow">Building now</div>
-    <h2 style="margin-top:10px">ClawbackVault: the <em>relationship brain</em> for high-touch firms</h2>
-    <p class="sub" style="margin-bottom:0">Clients rarely leave suddenly; the relationship drifts first. ClawbackVault reads only the clients a firm approves, masks personal details before any AI sees text, and each morning shows who is drifting, what was promised and what is missing, with a draft. A person always sends.</p>
+    <h2 style="margin-top:10px">ClawbackVault: the <em>relationship brain</em> for high-touch businesses</h2>
+    <p class="sub" style="margin-bottom:0">High-touch businesses set a high bar before the sale, then struggle to keep that warmth once the client is won. ClawbackVault discovers a firm's own best practices from its client conversations, scales them across the team with a morning list, drafts and automatic chasing, and keeps learning. People and AI agents can both work from the same brain. A person always presses send.</p>
     <ul>
-     <li><b>Markets:</b> commercial insurance brokers in Canada, mortgage brokers in Australia</li>
-     <li><b>Depth:</b> 489 real client moments scored across six markets</li>
-     <li><b>Trust:</b> read-only, approved clients only, independent pen test passed</li>
+     <li><b>Discover:</b> what actually keeps this firm's clients</li>
+     <li><b>Scale:</b> every person, and every AI agent, works that way</li>
+     <li><b>Trust:</b> read-only, approved clients only, masked before any AI</li>
     </ul>
     <div class="cta"><a class="btn p" href="https://clawbackvault.com">clawbackvault.com →</a></div>
    </div>
@@ -192,12 +216,11 @@ footer{padding:56px 0 70px;border-top:1px solid var(--line);color:var(--sub);fon
  <div class="wrap">
   <h2>Beyond <em>work</em></h2>
   <div class="chips" style="margin-top:24px">
-   <span class="chip">Trinity table-tennis champion, three years running</span>
-   <span class="chip">Irish intervarsity plate winner, 2023</span>
-   <span class="chip">8 state-level tournament wins in India</span>
-   <span class="chip">Lead singer, college band</span>
-   <span class="chip">English · Hindi · Urdu · Marathi</span>
-   <span class="chip">IELTS band 9</span>
+   <span class="chip">Table tennis: Trinity College champion, three years running</span>
+   <span class="chip">Table tennis: Irish intervarsity plate winner, 2023</span>
+   <span class="chip">8 state-level table tennis wins in India</span>
+   <span class="chip">Singer: lead vocalist of my college band</span>
+   <span class="chip">English &middot; Hindi &middot; Urdu &middot; Marathi</span>
   </div>
  </div>
 </section>
